@@ -129,6 +129,8 @@ h1 .glyphicon {
 }
 
 .user-thumb > img {
+  width: 56px;
+  height: 56px;
   padding: 2px;
   border: 1px solid #464c54;
 }
@@ -138,7 +140,10 @@ h1 .glyphicon {
 }
 
 .this-user > img {
+  width: 60px;
+  height: 60px;
   padding: 4px;
+  margin-top: 2px;
   border: 1px solid #5d6570;
 }
 
