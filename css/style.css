@@ -1,8 +1,8 @@
 body {
   padding-top: 50px;
   color: #eee;
-  background: url('../assets/img/twinkle_twinkle.png');
   background-color: #23262a;
+  background-image: url('../assets/img/twinkle_twinkle.png');
 }
 
 body,
@@ -35,6 +35,14 @@ a:focus {
   color: #00c1ff;
 }
 
+img.pull-left {
+  margin-right: 6px;
+}
+
+img.pull-right {
+  margin-left: 6px;
+}
+
 .navbar-brand {
   padding: 5px 15px;
 }
@@ -54,14 +62,14 @@ footer.signature {
 }
 
 .header-brand {
-  margin: 50px 20px;
+  margin: 50px 0;
 }
 
 .cbg {
   padding: 8px 16px;
   margin: 6px;
-  background: #2a2e33;
-  border: 1px solid #4d545d;
+  background: #23262a;
+  border: 1px solid #464c54;
 }
 
 .cnt {
@@ -72,7 +80,7 @@ footer.signature {
 .cbg:before {
   float: right;
   font-size: 10px;
-  color: #58606b;
+  color: #515862;
   content: 'OPS>>CIES';
 }
 
@@ -106,12 +114,37 @@ h1 .glyphicon {
 }
 
 .user-thumb {
-  min-height: 50px;
+  min-height: 56px;
+  margin-bottom: 6px;
 }
 
 .user-thumb .user-name,
 .user-thumb .user-rep {
   padding-top: 6px;
+  margin: 0;
+}
+
+.user-thumb-body {
+  display: inline-block;
+}
+
+.user-thumb > img {
+  padding: 2px;
+  border: 1px solid #464c54;
+}
+
+.this-user {
+  text-align: right;
+}
+
+.this-user > img {
+  padding: 4px;
+  border: 1px solid #5d6570;
+}
+
+.this-user .user-thumb-body > p,
+.this-user .user-thumb-body > h3 {
+  padding: 0;
   margin: 0;
 }
 
@@ -204,6 +237,6 @@ h1 .glyphicon {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   body {
-    background: url('../assets/img/twinkle_twinkle_@2x.png');
+    background-image: url('../assets/img/twinkle_twinkle_@2X.png');
   }
 }
