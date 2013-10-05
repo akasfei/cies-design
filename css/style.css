@@ -1,0 +1,208 @@
+body {
+  padding-top: 50px;
+  color: #eee;
+  background: url('../assets/img/twinkle_twinkle.png');
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+input,
+button,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", "微软雅黑", sans-serif !important;
+}
+
+a {
+  color: #b8dae5;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #00c1ff;
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+}
+
+.navbar-main {
+  font-size: 18px;
+}
+
+.navbar-main .active > a {
+  border-bottom: 5px solid #00c1ff;
+}
+
+footer.signature {
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.header-brand {
+  margin: 50px 20px;
+}
+
+.cbg {
+  padding: 8px 16px;
+  margin: 6px;
+  background: #2a2e33;
+  border: 1px solid #4d545d;
+}
+
+.cnt {
+  padding: 0 12px;
+  margin: 12px 6px;
+}
+
+.cbg:before {
+  float: right;
+  font-size: 10px;
+  color: #58606b;
+  content: 'OPS>>CIES';
+}
+
+.blog-abs {
+  margin-right: 60px;
+  color: #ccc;
+}
+
+.blog-footer {
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #aaa;
+}
+
+.blog-footer a {
+  color: #ccc;
+}
+
+.blog-dashboard {
+  display: block;
+  float: right;
+  width: 60px;
+  padding: 4px;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid #116787;
+}
+
+h1 .glyphicon {
+  margin-right: 8px;
+}
+
+.user-thumb {
+  min-height: 50px;
+}
+
+.user-thumb .user-name,
+.user-thumb .user-rep {
+  padding-top: 6px;
+  margin: 0;
+}
+
+.question-dashboard {
+  display: block;
+  float: right;
+  width: 140px;
+  text-align: center;
+}
+
+.question-dashboard .question-votes,
+.question-dashboard .question-answers {
+  display: inline-block;
+  width: 60px;
+  padding: 4px;
+  margin: 0 4px;
+  border: 1px solid #c30000;
+}
+
+.question-dashboard .question-votes:after {
+  display: block;
+  font-size: 10px;
+  color: #ccc;
+  content: '点评分';
+}
+
+.question-dashboard .question-answers:after {
+  display: block;
+  font-size: 10px;
+  color: #ccc;
+  content: '条回答';
+}
+
+.blog-dashboard .blog-votes,
+.question-dashboard .question-votes,
+.question-dashboard .question-answers {
+  font-size: 32px;
+}
+
+.user-thumb .user-rep {
+  color: #ccc;
+}
+
+.quest-thumb {
+  padding: 0 0 2px 8px;
+  margin-bottom: 8px;
+  border-left: 2px solid #ffbb33;
+}
+
+.quest-thumb > h5 {
+  margin: 0 0 4px 0;
+}
+
+.quest-thumb > p {
+  margin: 0;
+}
+
+#sec1-h {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #33b5e5;
+}
+
+#sec2-h {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #aa66cc;
+}
+
+#sec3-h {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #99cc00;
+}
+
+#sec4-h {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ff4444;
+}
+
+#sec5-h {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ffbb33;
+}
+
+.cnt.cnt-blu {
+  border-left: 2px solid #33b5e5;
+}
+
+.cnt.cnt-red {
+  border-left: 2px solid #ff4444;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background: url('../assets/img/twinkle_twinkle_@2x.png');
+  }
+}
