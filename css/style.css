@@ -32,7 +32,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #00c1ff;
+  color: #00c2ff;
 }
 
 img.pull-left {
@@ -43,6 +43,20 @@ img.pull-right {
   margin-left: 6px;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img.bordered {
+  padding: 4px;
+  border: 1px solid #3a3f46;
+}
+
+.container.spaced {
+  padding-top: 40px;
+}
+
 .navbar-brand {
   padding: 5px 15px;
 }
@@ -51,8 +65,22 @@ img.pull-right {
   font-size: 18px;
 }
 
-.navbar-main .active > a {
-  border-bottom: 5px solid #00c1ff;
+.navbar-ops {
+  font-size: 11px;
+}
+
+.navbar-nav .active > a {
+  border-bottom: 5px solid #00c2ff;
+}
+
+.dropdown-menu {
+  color: #fff;
+  background-color: #23262a;
+  border: 1px solid #464c54;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
 }
 
 footer.signature {
@@ -135,6 +163,15 @@ h1 .glyphicon {
   border: 1px solid #464c54;
 }
 
+.user-profile .user-dashboard {
+  text-align: center;
+}
+
+.user-profile .user-dashboard-small {
+  font-size: 11px;
+  color: #828b97;
+}
+
 .this-user {
   text-align: right;
 }
@@ -207,29 +244,34 @@ h1 .glyphicon {
   margin: 0;
 }
 
-#sec1-h {
+.h-blu {
   padding-bottom: 4px;
   border-bottom: 2px solid #33b5e5;
 }
 
-#sec2-h {
+.h-ppl {
   padding-bottom: 4px;
   border-bottom: 2px solid #aa66cc;
 }
 
-#sec3-h {
+.h-grn {
   padding-bottom: 4px;
   border-bottom: 2px solid #99cc00;
 }
 
-#sec4-h {
+.h-red {
   padding-bottom: 4px;
   border-bottom: 2px solid #ff4444;
 }
 
-#sec5-h {
+.h-ylw {
   padding-bottom: 4px;
   border-bottom: 2px solid #ffbb33;
+}
+
+.h-gry {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #515862;
 }
 
 .cnt.cnt-blu {
@@ -238,6 +280,10 @@ h1 .glyphicon {
 
 .cnt.cnt-red {
   border-left: 2px solid #ff4444;
+}
+
+#cies-brand-logo {
+  max-height: 100px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
