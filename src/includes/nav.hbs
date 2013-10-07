@@ -16,16 +16,28 @@
           <a href="{{#isnt basename "index"}}{{/isnt}}index.html">主页</a>
         </li>
         <li{{#is basename "blog"}} class="active"{{/is}}>
-          <a href="{{#is basename "index"}}{{/is}}blog.html">博客</a>
+          <a href="{{#isnt basename "blog"}}blog.html{{/isnt}}">博客</a>
         </li>
         <li{{#is basename "questions"}} class="active"{{/is}}>
-          <a href="{{#is basename "index"}}{{/is}}questions.html">问答</a>
+          <a href="{{#isnt basename "questions"}}questions.html{{/isnt}}">问答</a>
         </li>
         <li{{#is basename "quests"}} class="active"{{/is}}>
-          <a href="{{#is basename "index"}}{{/is}}quests.html">任务</a>
+          <a href="{{#isnt basename "quests"}}quests.html{{/isnt}}">任务</a>
         </li>
         <li{{#is basename "achievements"}} class="active"{{/is}}>
-          <a href="{{#is basename "index"}}{{/is}}achievements.html">成就</a>
+          <a href="{{#isnt basename "achievements"}}achievements.html{{/isnt}}">成就</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right navbar-ops">
+        <li{{#is basename "usercenter"}} class="active"{{/is}}>
+          <a href="{{#isnt basename "usercenter"}}usercenter.html{{/isnt}}">OPS>>USERNAME></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">MSG <span class="badge">0</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"> 没有新的消息 </a></li>
+          </ul>
         </li>
       </ul>
     </div>
