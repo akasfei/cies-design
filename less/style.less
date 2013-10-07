@@ -2,7 +2,7 @@
 
 @link-def:   #b8dae5;
 @cbg-grey:   #23262a;
-@ing-blue:   #00c1ff;
+@ing-blue:   #00c2ff;
 @blu:        #33b5e5;
 @red:        #ff4444;
 @grn:        #99cc00;
@@ -42,6 +42,20 @@ img.pull-right {
   margin-left: 6px;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img.bordered {
+  padding: 4px;
+  border: 1px solid lighten(@cbg-grey, 10%);
+}
+
+.container.spaced {
+  padding-top: 40px;
+}
+
 .navbar-brand {
   padding: 5px 15px;
 }
@@ -50,8 +64,22 @@ img.pull-right {
   font-size: 18px;
 }
 
-.navbar-main .active > a {
+.navbar-ops {
+  font-size: 11px;
+}
+
+.navbar-nav .active > a {
   border-bottom: 5px solid @ing-blue;
+}
+
+.dropdown-menu {
+  color: #fff;
+  background-color: @cbg-grey;
+  border: 1px solid lighten(@cbg-grey, 15%);
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
 }
 
 footer.signature {
@@ -134,6 +162,15 @@ h1 .glyphicon {
   border: 1px solid lighten(@cbg-grey, 15%);
 }
 
+.user-profile .user-dashboard {
+  text-align: center;
+}
+
+.user-profile .user-dashboard-small {
+  font-size: 11px;
+  color: lighten(@cbg-grey, 40%)
+}
+
 .this-user {
   text-align: right;
 }
@@ -206,27 +243,31 @@ h1 .glyphicon {
   margin: 0;
 }
 
-#sec1-h {
+.h-blu {
   padding-bottom: 4px;
   border-bottom: 2px solid @blu;
 }
 
-#sec2-h {
+.h-ppl {
   padding-bottom: 4px;
   border-bottom: 2px solid @ppl;
 }
 
-#sec3-h {
+.h-grn {
   padding-bottom: 4px;
   border-bottom: 2px solid @grn;
 }
-#sec4-h {
+.h-red {
   padding-bottom: 4px;
   border-bottom: 2px solid @red;
 }
-#sec5-h {
+.h-ylw {
   padding-bottom: 4px;
   border-bottom: 2px solid @ylw;
+}
+.h-gry {
+  padding-bottom: 4px;
+  border-bottom: 2px solid lighten(@cbg-grey, 20%);
 }
 
 .cnt.cnt-blu {
@@ -235,6 +276,10 @@ h1 .glyphicon {
 
 .cnt.cnt-red {
   border-left: 2px solid @red;
+}
+
+#cies-brand-logo {
+  max-height: 100px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {

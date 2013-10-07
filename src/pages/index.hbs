@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row header-brand">
     <div class="col-md-6">
-      <img src="./assets/img/brand-logo-100.png" alt="CIES logo" height="100" width="400">
+      <img id="cies-brand-logo" src="./assets/img/cies-brand-logo_@2X.png" alt="CIES logo">
     </div>
     <div class="col-md-6">
       <div class="this-user user-thumb pull-right">
-        <img src="assets/img/profile-img/ShaperGlyphs-small_25.jpg" class="pull-right" alt="">
+        <img src="assets/img/profile-img/ShaperGlyphs-2_25.jpg" class="pull-right" alt="">
         
         <div class="user-thumb-body">
           <h3 class="user-name">欢迎, <a href="#">SierraNine</a> </h3>
@@ -20,7 +20,7 @@
   <div class="row">
     <div class="col-md-9">
       <div class="cbg">
-        <h1 id="sec1-h">推荐博文</h1>
+        <h1 class="h-blu">推荐博文</h1>
         {{#parseJSON '{"title": "第二十六个第一届花样作死大赛开幕", "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ea ab atque voluptas sed facere in repellat placeat quasi non ipsa architecto nobis aliquid minima saepe quod perspiciatis omnis odio!", "author": "神秘博士", "time": "42分钟前", "votes": "42", "comment_count": "16", "tags": ["花样作死大赛"]}'}}
           {{> blog-thumb}}
         {{/parseJSON}}
@@ -31,7 +31,7 @@
       </div>
 
       <div class="cbg">
-        <h1 id="sec4-h">最新问题</h1>
+        <h1 class="h-red">最新问题</h1>
         {{#parseJSON '{"title": "AngularJS的设计思想是什么？", "author": "SierraSix", "time": "2小时前", "votes": "73", "answers": "1", "tags": ["AngularJS", "Web开发"] }'}}
           {{> question-thumb}}
         {{/parseJSON}}
@@ -43,7 +43,7 @@
     </div>
     <div class="col-md-3">
       <div class="cbg">
-        <h1 id="sec2-h">档案库</h1>
+        <h1 class="h-ppl">档案库</h1>
         <p>
           <a href="#" class="label label-default">花样作死大赛</a>
           <a href="#" class="label label-default">Web前端</a>
@@ -57,8 +57,8 @@
       </div>
 
       <div class="cbg">
-        <h1 id="sec3-h">本月活跃用户</h1>
-        {{#parseJSON '{"users":[{"name": "SierraSix", "img_file": "ShaperGlyphs-small_02.jpg", "reputation": "42k"}, {"name": "SierraSeven", "img_file": "ShaperGlyphs-small_03.jpg", "reputation": "1.6k"}, {"name": "SierraEight", "img_file": "ShaperGlyphs-small_04.jpg", "reputation": "73"}]}'}}
+        <h1 class="h-grn">本月活跃用户</h1>
+        {{#parseJSON '{"users":[{"name": "SierraSix", "img_file": "ShaperGlyphs-2_02.jpg", "reputation": "42k"}, {"name": "SierraSeven", "img_file": "ShaperGlyphs-2_03.jpg", "reputation": "1.6k"}, {"name": "SierraEight", "img_file": "ShaperGlyphs-2_04.jpg", "reputation": "73"}]}'}}
           {{#each users}}
             {{> user-thumb}}
           {{/each}}
@@ -66,7 +66,7 @@
       </div>
 
       <div class="cbg">
-        <h1 id="sec5-h">周常任务</h1>
+        <h1 class="h-ylw">周常任务</h1>
         {{#parseJSON '{"quests": [{"title": "张贴海报", "award": "50", "tags": ["杂项事务"]}, {"title": "再用脸滚键盘啊", "award": "150", "tags": ["C"]}, {"title": "大声说出我多强力", "award": "5000", "tags": ["史诗"]}]}'}}
           {{#each quests}}
             {{> quest-thumb}}

@@ -1,0 +1,72 @@
+<div class="row user-profile">
+  <div class="col-xs-2">
+    <div class="cbg">
+      <img class="bordered" src="./assets/img/profile-img/{{img_file}}" alt="">
+      <a href="#" class="user-update-img user-dashboard-small">更换头像</a>
+    </div>
+  </div>
+  <div class="col-xs-10">
+    <div class="user-details cbg">
+
+      <h1 class="h-gry">{{name}}<a href="#" class="user-update-info user-dashboard-small pull-right">编辑信息</a></h1>
+      <p>{{desc}}</p>
+      <div class="row user-dashboard">
+        <div class="col-md-4">
+          <div class="cnt">
+            <h4 class="h-ppl">专精</h4>
+            {{#if spec}}
+
+            {{#is spec "recycle"}}
+            <h1><span class="glyphicon glyphicon-refresh"></span></h1>
+            <p>回收XMP专精</p>
+            {{/is}}
+            {{#is spec "html"}}
+            <h1><span class="glyphicon glyphicon-fire"></span></h1>
+            <p>Web前端专精</p>
+            {{/is}}
+            {{#is spec "web"}}
+            <h1><span class="glyphicon glyphicon-hdd"></span></h1>
+            <p>Web后台专精</p>
+            {{/is}}
+            {{#is spec "android"}}
+            <h1><span class="glyphicon glyphicon-phone"></span></h1>
+            <p>Android专精</p>
+            {{/is}}
+            {{#is spec "design"}}
+            <h1><span class="glyphicon glyphicon-pencil"></span></h1>
+            <p>产品设计专精</p>
+            {{/is}}
+            {{#is spec "planning"}}
+            <h1><span class="glyphicon glyphicon-globe"></span></h1>
+            <p>活动策划专精</p>
+            {{/is}}
+
+            {{/if}}
+
+            {{#unless spec}}
+            <h1><span class="glyphicon glyphicon-warning-sign"></span></h1>
+            <p>未选择专精</p>
+            {{/unless}}
+            <a href="#" class="user-reset-spec user-dashboard-small">{{#if spec}}重新{{/if}}选择自己的专精</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cnt">
+            <h4 class="h-grn">声望</h4>
+            <h1>{{addCommas reputation}} <span class="glyphicon glyphicon-star"></span></h1>
+            <p>点声望值</p>
+            <a href="quests.html" class="user-dashboard-small">查看可用任务</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cnt">
+            <h4 class="h-ylw">成就</h4>
+            <h1>{{addCommas achievement}} <span class="glyphicon glyphicon-certificate"></span></h1>
+            <p>成就点数</p>
+            <a href="achievements.html" class="user-dashboard-small">查看成就</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

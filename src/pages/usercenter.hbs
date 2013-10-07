@@ -1,0 +1,23 @@
+<div class="container spaced">
+  {{#parseJSON '{"name": "SierraNine", "img_file":"ShaperGlyphs-2_25.jpg", "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis architecto eaque id dolorum accusantium blanditiis illo quas alias cum assumenda. Reiciendis cumque reprehenderit repellat quisquam nemo vel nostrum quae tenetur.", "spec": "html", "reputation": 32767, "achievement": 1024}'}}
+    {{> user-profile}}
+  {{/parseJSON}}
+  <div class="row">
+    <div class="col-md-6">
+      <div class="cbg">
+        <h1 class="h-blu">博文收藏</h1>
+        {{#parseJSON '{"title": "二十一天学会Fire XMP", "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum a impedit numquam explicabo dignissimos consequuntur voluptatem sunt eligendi quas nam fuga praesentium accusamus rem corporis quae laudantium iusto necessitatibus?", "author": "xghrl", "time": "21天前", "votes": "-7", "comment_count": "19", "tags": ["Ingress", "二十一天学会XXX"]}'}}
+          {{> blog-thumb}}
+        {{/parseJSON}}
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="cbg">
+        <h1 class="h-red">我的问题</h1>
+        {{#parseJSON '{"title": "Bootstrap, Foundation各有什么优劣？", "author": "SierraNine", "time": "4小时前", "votes": "10", "answers": "2", "tags": ["Bootstrap", "Foundation", "Web开发"] }'}}
+          {{> question-thumb}}
+        {{/parseJSON}}
+      </div>
+    </div>
+  </div>
+</div>
