@@ -1,0 +1,30 @@
+---
+title: 登录
+---
+<div class="container spaced">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="cbg">
+        
+      
+        <form action="" class="form-horizontal form-large">
+          <div class="">
+            {{#parseJSON '{"id": "cies_email", "label": "电子邮箱", "horizontal": true}'}}
+              {{> form-group }}
+            {{/parseJSON}}
+
+            {{#parseJSON '{"id": "cies_password", "type": "password", "label": "密码", "horizontal": true}'}}
+              {{> form-group }}
+            {{/parseJSON}}
+            <div class="form-group">
+              <div class="col-md-9 col-md-offset-3">
+                <a href="#" class="btn btn-primary">登录</a> <a href="register.html" class="btn btn-default">注册</a>
+              </div> 
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
