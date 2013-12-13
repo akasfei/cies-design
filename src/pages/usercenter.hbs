@@ -8,17 +8,23 @@ title: 用户中心
   <div class="row">
     <div class="col-md-6">
       <div class="cbg">
-        <h1 class="h-blu">博文收藏</h1>
+        <h1 class="h-blu">我的收藏</h1>
         {{#parseJSON '{"title": "二十一天学会Fire XMP", "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum a impedit numquam explicabo dignissimos consequuntur voluptatem sunt eligendi quas nam fuga praesentium accusamus rem corporis quae laudantium iusto necessitatibus?", "author": "xghrl", "time": "21天前", "votes": "-7", "comment_count": "19", "tags": ["Ingress", "二十一天学会XXX"]}'}}
           {{> blog-thumb}}
+        {{/parseJSON}}
+        {{#parseJSON '{"title": "如何安装ArchLinux", "author": "SierraTen", "time": "12小时前", "votes": "21", "answers": "3", "tags": ["Linux", "Archlinux"] }'}}
+          {{> question-thumb}}
         {{/parseJSON}}
       </div>
     </div>
     <div class="col-md-6">
       <div class="cbg">
-        <h1 class="h-red">我的问题</h1>
+        <h1 class="h-red">我的发布</h1>
         {{#parseJSON '{"title": "Bootstrap, Foundation各有什么优劣？", "author": "SierraNine", "time": "4小时前", "votes": "10", "answers": "2", "tags": ["Bootstrap", "Foundation", "Web开发"] }'}}
           {{> question-thumb}}
+        {{/parseJSON}}
+        {{#parseJSON '{"title": "这些龙不是我引的", "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum a impedit numquam explicabo dignissimos consequuntur voluptatem sunt eligendi quas nam fuga praesentium accusamus rem corporis quae laudantium iusto necessitatibus?", "author": "火车网", "time": "1天前", "votes": "1", "comment_count": "8", "tags": ["World of Warcraft"]}'}}
+          {{> blog-thumb}}
         {{/parseJSON}}
       </div>
     </div>
