@@ -97,6 +97,7 @@ footer.signature {
 }
 
 .cbg {
+  position: relative;
   margin: 6px;
   padding: 8px 16px;
   border: 1px solid lighten(@cbg-grey, 15%);
@@ -114,6 +115,9 @@ footer.signature {
 }
 
 .cbg:before {
+  position: absolute;
+  top: 6px;
+  right: 6px;
   content: 'OPS>>CIES';
   float: right;
   color: lighten(@cbg-grey, 20%);;
@@ -292,11 +296,34 @@ footer.signature {
   padding: 20px 0px;
 }
 
+.spec-icons {
+  padding-left: 0;
+  list-style: none;
+}
+
+.spec-icons > li.active > .spec-select{
+  color: #fff;
+  border-color: lighten(@cbg-grey, 30%);
+  background: lighten(@cbg-grey, 5%);
+}
+
 .spec-select {
   display: block;
   padding: 10px 18px;
   text-align: center;
+  text-decoration: none !important;
   cursor: pointer;
+}
+
+.spec-details .cbg {
+  padding-top: 26px;
+  border-color: lighten(@cbg-grey, 25%);
+  text-align: center;
+}
+
+.spec-details .img-thumbnail {
+  border-color: lighten(@cbg-grey, 40%);
+  background: transparent;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
