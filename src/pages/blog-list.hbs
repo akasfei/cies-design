@@ -1,0 +1,43 @@
+---
+title: 博客列表
+---
+<div class="container spaced">
+  <div class="row">
+    <div class="col-md-3 blog-tags">
+      <div class="cbg">
+        <h3>搜索</h3>
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <a class="btn btn-default" href="#"><i class="glyphicon glyphicon-search"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="cbg">
+        <h3>热门标签</h3>
+        <p>
+          <a href="#" class="label label-default">花样作死大赛</a>
+          <a href="#" class="label label-default">Web前端</a>
+          <a href="#" class="label label-default">PHP</a>
+          <a href="#" class="label label-default">Java</a>
+          <a href="#" class="label label-default">C</a>
+          <a href="#" class="label label-default">黑主席</a>
+          <a href="#" class="label label-default">Web设计</a>
+          <a href="#" class="label label-default">移动UI</a>
+        </p>
+      </div>
+    </div>
+    
+    <div class="col-md-9">
+      <div class="row">
+        {{#each blog-examples}}
+          <div class="col-md-12">
+            <div class="cbg">
+              {{> blog-thumb}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,19 +12,19 @@
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-main">
-        <li{{#is basename "index"}} class="active"{{/is}}>
+        <li{{#contains basename "index"}} class="active"{{/contains}}>
           <a href="{{#isnt basename "index"}}{{/isnt}}index.html">主页</a>
         </li>
-        <li{{#is basename "blog"}} class="active"{{/is}}>
+        <li{{#contains basename "blog"}} class="active"{{/contains}}>
           <a href="{{#isnt basename "blog"}}blog.html{{/isnt}}">博客</a>
         </li>
-        <li{{#is basename "questions"}} class="active"{{/is}}>
-          <a href="{{#isnt basename "questions"}}questions.html{{/isnt}}">问答</a>
+        <li{{#contains basename "question"}} class="active"{{/contains}}>
+          <a href="{{#isnt basename "question"}}question.html{{/isnt}}">问答</a>
         </li>
-        <li{{#is basename "quests"}} class="active"{{/is}}>
+        <li{{#contains basename "quests"}} class="active"{{/contains}}>
           <a href="{{#isnt basename "quests"}}quests.html{{/isnt}}">任务</a>
         </li>
-        <li{{#is basename "achievements"}} class="active"{{/is}}>
+        <li{{#contains basename "achievements"}} class="active"{{/contains}}>
           <a href="{{#isnt basename "achievements"}}achievements.html{{/isnt}}">成就</a>
         </li>
       </ul>
