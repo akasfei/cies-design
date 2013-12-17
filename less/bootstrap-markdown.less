@@ -1,0 +1,65 @@
+/**
+ * Bootstrap-Markdown.less
+ *
+ * @author Taufan Aditya @taufanaditya
+ * @copyright 2013 Taufan Aditya
+ */
+
+// @import "variables.less"; // Point this into your bootstrap variables
+// @import "mixins.less"; // Point this into your bootstrap variables
+
+@table-border-color: lighten(@cbg-grey, 25%);
+@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+@panel-default-heading-bg: lighten(@cbg-grey, 10%);
+@font-size-base: 14px;
+@input-bg: #fff;
+@panel-bg: #fff;
+
+.md-editor {
+  display: block;
+  border: 1px solid @table-border-color;
+
+  > .md-header, .md-footer {
+    display: block;
+    padding: 6px 4px;
+    background: @panel-default-heading-bg;
+  }
+
+  > .md-preview {
+    color: #fff;
+    padding: 8px 16px;
+    background: @cbg-grey;
+    border-top: 1px solid @table-border-color;
+    min-height: 10px;
+  }
+
+  > textarea {
+    font-family: @font-family-monospace;
+    font-size: @font-size-base;
+    color: #ccc;
+    outline: 0;
+    outline: thin dotted  \9; /* IE6-9 */
+    margin: 0;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid @table-border-color;
+    // border-bottom: 1px solid @table-border-color;
+    border-radius: 0;
+    box-shadow: none;
+    background: @cbg-grey;
+    &:focus {
+      color: #fff;
+      box-shadow: none;
+      background: darken(@cbg-grey, 1%);
+    }
+  }
+
+  // Hover state
+  @color: @table-border-color;
+  &.active {
+    border-color: @color;
+    outline: 0;
+  }
+}
