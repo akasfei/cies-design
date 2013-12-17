@@ -9,6 +9,8 @@
 @ylw:        #ffbb33;
 @ppl:        #aa66cc;
 
+@import "bootstrap-markdown.less";
+
 body {
   padding-top: 50px;
   background-image: url('../assets/img/twinkle_twinkle.png');
@@ -399,6 +401,34 @@ footer.signature {
 
 .blog-star-toggle.active > .glyphicon:before {
   content: "\e006";
+}
+
+.blog-tag-select {
+  margin-bottom: 4px;
+}
+
+.blog-tags-active > .btn-group,
+.blog-tags-active > .input-group {
+  margin-bottom: 8px;
+}
+
+.hint {
+  color: lighten(@cbg-grey, 35%);
+  font-size: 11px;
+}
+
+.hint > a {
+  color: lighten(@cbg-grey, 50%);
+}
+
+.hint > a:hover, 
+.hint > a:active {
+  color: lighten(@blu, 10%);
+}
+
+.hint:before {
+  content: '>> ';
+  color: lighten(@cbg-grey, 50%);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {

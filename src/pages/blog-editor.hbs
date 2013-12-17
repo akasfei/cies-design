@@ -1,0 +1,69 @@
+---
+title: 撰写博客
+---
+<div class="container spaced">
+  <form class="row">
+    <div class="col-md-9">
+      <div class="cbg form-horizontal">
+        <h2>撰写博客</h2>
+        <div class="form-group">
+          <label for="blog_title" class="control-label col-md-2">标题</label>
+          <div class="col-md-5">
+            <input class="form-control" type="text" id="blog_title" name="blog_title" placeholder="标题是什么？">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="blog_abstract" class="control-label col-md-2">摘要</label>
+          <div class="col-md-9">
+            <input class="form-control" type="text" id="blog_abstract" name="blog_abstract" placeholder="这篇博文主要内容是什么？">
+          </div>
+        </div>
+      </div>
+
+      <div class="cbg">
+        <h2>博客正文
+          <p class="hint pull-right">博客正文使用Markdown语法。<a href="#">需要帮助？</a></p>
+        </h2>
+
+        <div class="blog-body-editor">
+          <textarea name="blog_content" id="blog_content" class="" data-provide="markdown" rows="20"></textarea>
+        </div>
+      </div>
+
+      <div class="cbg">
+        <a href="#" class="btn btn-primary btn-lg">提交</a>
+      </div>
+    </div>
+    <!-- .col-md-9 end -->
+    <div class="col-md-3 lg-pull-right">
+      <div class="cbg blog-tags-active">
+        <h3>标签</h3>
+        <div class="btn-group">
+          <a href="#" class="btn btn-default btn-sm blog-tag-selected active">术士不砍，魔兽必亡</a>
+          <a href="#" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-remove"></i></a>
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control input-sm">
+          <span class="input-group-btn">
+            <a class="btn btn-default btn-sm" href="#"><i class="glyphicon glyphicon-plus"></i></a>
+          </span>
+        </div>
+        <p class="hint">你可以在这里为你的博客添加标签，方便读者找到你的博文。</p>
+      </div>
+      <div class="cbg blog-tags-recommend">
+        <h3>可用标签</h3>
+        <p>
+          <a href="#" class="btn btn-default btn-xs blog-tag-select">花样做死</a>
+          <a href="#" class="btn btn-default btn-xs blog-tag-select">前端开发</a>
+          <a href="#" class="btn btn-default btn-xs blog-tag-select">炉石传说</a>
+          <a href="#" class="btn btn-default btn-xs blog-tag-select">World of Warcraft</a>
+        </p>
+        <p class="hint">你可以在这里选择适合你的博客的标签。</p>
+      </div>
+    </div>
+    <!-- .col-md-3 end -->
+  </form>
+</div>
+<script src="js/markdown{{#if production}}.min{{/if}}.js"></script>
+<script src="js/bootstrap-markdown{{#if production}}.min{{/if}}.js"></script>

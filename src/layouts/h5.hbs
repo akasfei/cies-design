@@ -26,15 +26,17 @@
     <!-- Place anything custom after this. -->
   </head>
   <body>
+    <!-- Load js here for greater good, and for some scripts which require jQuery in pages -->
+    <script src="./assets/js/jquery{{#if production}}.min{{/if}}.js"></script>
+    <script src="./js/bootstrap{{#if production}}.min{{/if}}.js"></script>
+    <script src="./js/application.js"></script>
+
     {{> nav }}
 
     {{> body }}
 
     {{> footer }}
-
-    <script src="./assets/js/jquery{{#if production}}.min{{/if}}.js"></script>
-    <script src="./js/bootstrap{{#if production}}.min{{/if}}.js"></script>
-    <script src="./js/application.js"></script>
+    
   </body>
 </html>
 
