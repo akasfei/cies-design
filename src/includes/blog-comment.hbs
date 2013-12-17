@@ -1,0 +1,14 @@
+<hr>
+<div class="blog-comment-entry">
+  <img src="assets/img/profile-img/{{user_img}}" alt="">
+  <div class="blog-comment-options">
+    <a href="#" class="blog-comment-reply"><i class="glyphicon glyphicon-comment"></i></a>
+    <br>
+    <a href="#" class="blog-comment-reportabuse"><i class="glyphicon glyphicon-flag"></i></a>
+    {{#if admin}}<a href="#" class="blog-comment-delete"><i class="glyphicon glyphicon-remove"></i></a>{{/if}}
+  </div>
+  <div class="blog-comment-body">
+    <h5><a href="#">{{username}}</a> - <span class="label label-default">{{time}}</span></h5>
+    <p>{{content}}</p>
+  </div>
+</div>
