@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>注册 - C.I.E.S.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./assets/js/html5shiv.js"></script>
+      <script src="./assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
+
+    <!-- Place anything custom after this. -->
+  </head>
+  <body>
+    <!-- Load js here for greater good, and for some scripts which require jQuery in pages -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/application.js"></script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="./assets/img/nav-logo-40.png" alt="CIES logo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-main">
+        <li>
+          <a href="index.html">主页</a>
+        </li>
+        <li>
+          <a href="blog.html">博客</a>
+        </li>
+        <li>
+          <a href="question.html">问答</a>
+        </li>
+        <li>
+          <a href="quests.html">任务</a>
+        </li>
+        <li>
+          <a href="achievements.html">成就</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right navbar-ops">
+        <li>
+          <a href="usercenter.html">OPS>>USERNAME></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">MSG <span class="badge">0</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"> 没有新的消息 </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container spaced">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="cbg">
+        
+      
+        <form action="" class="form-horizontal form-large">
+          <div class="">
+            <h1>注册</h1>
+            
+              <div class="form-group">
+  <label for="cies_email" class="control-label col-md-3">电子邮箱</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="text" id="cies_email" name="cies_email" placeholder="电子邮箱">
+  </div>
+</div>
+            
+
+            
+              <div class="form-group">
+  <label for="cies_codename" class="control-label col-md-3">代号</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="text" id="cies_codename" name="cies_codename" placeholder="代号">
+  </div>
+</div>
+            
+
+            
+              <div class="form-group">
+  <label for="cies_password" class="control-label col-md-3">密码</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="password" id="cies_password" name="cies_password" placeholder="密码">
+  </div>
+</div>
+            
+
+            
+              <div class="form-group">
+  <label for="cies_password_repeat" class="control-label col-md-3">重复密码</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="password" id="cies_password_repeat" name="cies_password_repeat" placeholder="重复密码">
+  </div>
+</div>
+            
+
+            <hr>
+
+            <h2>个人信息</h2>
+            
+              <div class="form-group">
+  <label for="cies_name" class="control-label col-md-3">姓名</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="text" id="cies_name" name="cies_name" placeholder="姓名">
+  </div>
+</div>
+            
+
+            <div class="form-group">
+              <label class="col-xs-3 control-label">
+                性别
+              </label>
+              <div class="col-xs-9">
+                <div class="radio-inline">
+                  <label>
+                    <input type="radio" name="cies_gender" id="cies_gender_m" value="Male" checked>
+                    男
+                  </label>
+                </div>
+                <div class="radio-inline">
+                  <label>
+                    <input type="radio" name="cies_gender" id="cies_gender_f" value="Female">
+                    女
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            
+              <div class="form-group">
+  <label for="cies_dob" class="control-label col-md-3">生日</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="date" id="cies_dob" name="cies_dob" placeholder="生日">
+  </div>
+</div>
+            
+
+            
+              <div class="form-group">
+  <label for="cies_class" class="control-label col-md-3">专业班级</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="text" id="cies_class" name="cies_class" placeholder="专业班级">
+  </div>
+</div>
+            
+
+            
+              <div class="form-group">
+  <label for="cies_studentid" class="control-label col-md-3">学号</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="text" id="cies_studentid" name="cies_studentid" placeholder="学号">
+  </div>
+</div>
+            
+
+            
+              <div class="form-group">
+  <label for="cies_phone" class="control-label col-md-3">手机号码</label>
+  <div class=" col-md-9">
+    <input class="form-control" type="text" id="cies_phone" name="cies_phone" placeholder="手机号码">
+  </div>
+</div>
+            
+
+            <div class="form-group">
+              <div class="col-md-9 col-md-offset-3">
+                <a href="#" class="btn btn-primary">提交</a>
+              </div> 
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TODO: register script
+           Check input validity
+           PUT to server
+<script src="js/app-register.js"></script>
+-->
+
+    <footer class="signature">
+  <h6>&copy;2013 SFEI Systems Inc.; All Rights Reserved.</h6>
+  <h6>Designed and Developed by <a href="http://isn.sfeisystems.net">SFEI Systems Inc.</a></h6>
+  <p><a href="https://www.ingress.com" class="btn btn-primary"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAVCAYAAABPPm7SAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQxJREFUeNrMVNERgjAMLZ4DsIFsYDcANnADcQJxAkdQJsANdAN0Ah0BJ4AN8OXu1Su1COeXuXuXtCGvaZKi1N9I13VV15cGWBGN46tM3Nzh2QCRtd5TF9ZeDayHCCR4Czy4Dqljau2QfRAYKYIguCDVTBawT3IVmKX7oUtwBVrgjIAj9I31OUDlwI7ZxUNFTGhrp3Bia/oSu4gzX/5IWU5JmY0g5Z4au4ItJlhZejoBTqyRam3syQQIklZm7Peo+GoQcYCWvxBoy5a2JZ4YPfQWTOsyoPTNPX3vlvpIIuAO5DI8nI2Kvpy+qFdsD4nMf8WJe3J7wdRlHtqvBB4SNRQ89n8IzRVI+KfyEmAAKFvd3ye44RMAAAAASUVORK5CYII=">  Join the Resistance!</a></p>
+</footer>
+    
+  </body>
+</html>
+
+<!-- Prepare to die in agony for the glory of the Sierra Empire! -->
+<!--  Designed and developed by Sierra Six of SFEI Systems Inc.  -->
+<!--                     akasfei@gmail.com                       -->

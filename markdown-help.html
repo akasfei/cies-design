@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Markdown 帮助 - C.I.E.S.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./assets/js/html5shiv.js"></script>
+      <script src="./assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./assets/ico/favicon.png">
+
+    <!-- Place anything custom after this. -->
+  </head>
+  <body>
+    <!-- Load js here for greater good, and for some scripts which require jQuery in pages -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/application.js"></script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="./assets/img/nav-logo-40.png" alt="CIES logo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-main">
+        <li>
+          <a href="index.html">主页</a>
+        </li>
+        <li>
+          <a href="blog.html">博客</a>
+        </li>
+        <li>
+          <a href="question.html">问答</a>
+        </li>
+        <li>
+          <a href="quests.html">任务</a>
+        </li>
+        <li>
+          <a href="achievements.html">成就</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right navbar-ops">
+        <li>
+          <a href="usercenter.html">OPS>>USERNAME></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">MSG <span class="badge">0</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"> 没有新的消息 </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container spaced">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="cbg">
+        <h1>Markdown 帮助</h1>
+<p>不知道为什么该用Markdown写作？<a href="http://jianshu.io/p/qqGjLN">点击这里</a></p>
+<h2>标题</h2>
+<p>这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。</p>
+<p>而在 Markdown 中，你只需要在文本前面加上 # 即可，同理、你还可以增加二级标题、三级标题、四级标题、五级标题和六级标题，总共六级，只需要增加  # 即可，标题字号相应降低。例如：</p>
+<pre><code># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题</code></pre>
+<blockquote>
+<p>注：<code>#</code> 和「一级标题」之间建议保留一个字符的空格，这是最标准的 Markdown 写法。</p>
+</blockquote>
+<p>标题效果：</p>
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+<h4>四级标题</h4>
+<h5>五级标题</h5>
+<h6>六级标题</h6>
+<h2>列表</h2>
+<p>列表格式也很常用，在 Markdown 中，你只需要在文字前面加上 <code>-</code> 就可以了，例如：</p>
+<pre><code>- 文本1
+- 文本2
+- 文本3</code></pre>
+<p>如果你希望有序列表，也可以在文字前面加上 <code>0.</code> 就可以了，例如：</p>
+<pre><code>0. 文本1
+0. 文本2
+0. 文本3</code></pre>
+<blockquote>
+<p>注：<code>-</code>、<code>0.</code> 和文本之间要保留一个字符的空格。</p>
+</blockquote>
+<p>列表效果如下：</p>
+<ul>
+<li>文本1</li>
+<li>文本2</li>
+<li>文本3</li>
+</ul>
+<ol>
+<li>文本1</li>
+<li>文本2</li>
+<li>文本3</li>
+</ol>
+<h2>链接和图片</h2>
+<p>在 Markdown 中，插入链接不需要其他按钮，你只需要使用 <code>[显示文本](链接地址)</code> 这样的语法即可，例如：</p>
+<p><code>[Text](http://static.ssiops.org/sd)</code></p>
+<p>在 Markdown 中，插入图片不需要其他按钮，你只需要使用 <code>![图片描述](图片链接地址)</code> 这样的语法即可，例如：</p>
+<p><code>![alt](http://sfeisystems.net/img/ico/apple-touch-icon-144-precomposed.png)</code></p>
+<blockquote>
+<p>注：插入图片的语法和链接的语法很像，只是前面多了一个 <code>!</code>。</p>
+<p>注2：插入图片是一般建议填上图片描述，这样才符合W3C的HTML规范。</p>
+</blockquote>
+<p>效果：</p>
+<p><a href="http://static.ssiops.org/sd">Text</a></p>
+<p><img src="http://sfeisystems.net/img/ico/apple-touch-icon-144-precomposed.png" alt="alt"></p>
+<h2>引用</h2>
+<p>在我们写作的时候经常需要引用他人的文字，这个时候引用这个格式就很有必要了，在 Markdown 中，你只需要在你希望引用的文字前面加上 &gt; 就好了，例如：</p>
+<pre><code>&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus expedita consequuntur aut cumque officia eveniet voluptatum earum ullam veniam temporibus laborum excepturi possimus ea molestias nemo soluta sit labore!</code></pre>
+<blockquote>
+<p>注：<code>&gt;</code> 和文本之间要保留一个字符的空格。</p>
+</blockquote>
+<p>最终显示的就是：</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus expedita consequuntur aut cumque officia eveniet voluptatum earum ullam veniam temporibus laborum excepturi possimus ea molestias nemo soluta sit labore!</p>
+</blockquote>
+<h2>粗体和斜体</h2>
+<p>Markdown 的粗体和斜体也非常简单，用 <code>**</code> 包含一段文本就是粗体的语法，用一个 <code>_</code> 包含一段文本就是斜体的语法。例如：</p>
+<pre><code>**Lorem** ipsum _dolor_ sit amet, **consectetur** adipisicing _elit_. Voluptas illo accusamus similique eum tenetur molestiae eveniet libero numquam consectetur magnam quo sapiente eius minus ratione dicta reiciendis quia adipisci. Aspernatur.</code></pre>
+<p>显示的就是：</p>
+<p><strong>Lorem</strong> ipsum <em>dolor</em> sit amet, <strong>consectetur</strong> adipisicing <em>elit</em>. Voluptas illo accusamus similique eum tenetur molestiae eveniet libero numquam consectetur magnam quo sapiente eius minus ratione dicta reiciendis quia adipisci. Aspernatur.</p>
+<h2>代码和代码段</h2>
+<p>如果要在一行文字中显示一段代码，可以使用 “ ` ” 标记。（通常在键盘上1按键的左侧）</p>
+<p>显示效果就像<code>这样</code>。</p>
+<p>要使用代码段，可以使用这样的标记：</p>
+<pre><code>```
+$ sudo rm -rf ~/*
+$ sudo rm -rf /*
+```</code></pre>
+<p>显示效果：</p>
+<pre><code>$ sudo rm -rf ~/*
+$ sudo rm -rf /*</code></pre>
+<blockquote>
+<p>注：任何时候不要在shell下运行上面的指令，造成的任何后果网站开发者概不负责。</p>
+</blockquote>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="signature">
+  <h6>&copy;2013 SFEI Systems Inc.; All Rights Reserved.</h6>
+  <h6>Designed and Developed by <a href="http://isn.sfeisystems.net">SFEI Systems Inc.</a></h6>
+  <p><a href="https://www.ingress.com" class="btn btn-primary"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAVCAYAAABPPm7SAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQxJREFUeNrMVNERgjAMLZ4DsIFsYDcANnADcQJxAkdQJsANdAN0Ah0BJ4AN8OXu1Su1COeXuXuXtCGvaZKi1N9I13VV15cGWBGN46tM3Nzh2QCRtd5TF9ZeDayHCCR4Czy4Dqljau2QfRAYKYIguCDVTBawT3IVmKX7oUtwBVrgjIAj9I31OUDlwI7ZxUNFTGhrp3Bia/oSu4gzX/5IWU5JmY0g5Z4au4ItJlhZejoBTqyRam3syQQIklZm7Peo+GoQcYCWvxBoy5a2JZ4YPfQWTOsyoPTNPX3vlvpIIuAO5DI8nI2Kvpy+qFdsD4nMf8WJe3J7wdRlHtqvBB4SNRQ89n8IzRVI+KfyEmAAKFvd3ye44RMAAAAASUVORK5CYII=">  Join the Resistance!</a></p>
+</footer>
+    
+  </body>
+</html>
+
+<!-- Prepare to die in agony for the glory of the Sierra Empire! -->
+<!--  Designed and developed by Sierra Six of SFEI Systems Inc.  -->
+<!--                     akasfei@gmail.com                       -->

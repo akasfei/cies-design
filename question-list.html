@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>用户中心 - C.I.E.S.</title>
+    <title>问答列表 - C.I.E.S.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -51,7 +51,7 @@
         <li>
           <a href="blog.html">博客</a>
         </li>
-        <li>
+        <li class="active">
           <a href="question.html">问答</a>
         </li>
         <li>
@@ -63,8 +63,8 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right navbar-ops">
-        <li class="active">
-          <a href="">OPS>>USERNAME></a>
+        <li>
+          <a href="usercenter.html">OPS>>USERNAME></a>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">MSG <span class="badge">0</span></a>
@@ -79,114 +79,84 @@
 
 
     <div class="container spaced">
-  
-    <div class="row user-profile">
-  <div class="col-sm-2">
-    <div class="cbg">
-      <img class="bordered" src="./assets/img/profile-img/ShaperGlyphs-2_25.jpg" alt="">
-      <p><a href="#" class="user-update-img user-dashboard-small pull-right">更换头像</a></p>
-    </div>
-  </div>
-  <div class="col-sm-10">
-    <div class="user-details cbg">
-
-      <h1 class="h-gry">SierraNine<a href="#" class="user-update-info user-dashboard-small pull-right">编辑信息</a></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis architecto eaque id dolorum accusantium blanditiis illo quas alias cum assumenda. Reiciendis cumque reprehenderit repellat quisquam nemo vel nostrum quae tenetur.</p>
-      <div class="row user-dashboard">
-        <div class="col-md-4">
-          <div class="cnt">
-            <h4 class="h-ppl">专精</h4>
-            
-
-            
-            
-            <h1><span class="glyphicon glyphicon-fire"></span></h1>
-            <p>Web前端专精</p>
-            
-            
-            
-            
-            
-
-            
-
-            
-            <a href="#" class="user-reset-spec user-dashboard-small">重新选择自己的专精</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="cnt">
-            <h4 class="h-grn">声望</h4>
-            <h1>32,767 <span class="glyphicon glyphicon-star"></span></h1>
-            <p>点声望值</p>
-            <a href="quests.html" class="user-dashboard-small">查看可用任务</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="cnt">
-            <h4 class="h-ylw">成就</h4>
-            <h1>1,024 <span class="glyphicon glyphicon-certificate"></span></h1>
-            <p>成就点数</p>
-            <a href="achievements.html" class="user-dashboard-small">查看成就</a>
-          </div>
+  <div class="row">
+    <div class="col-md-3 blog-tags">
+      <div class="cbg">
+        <h3>搜索</h3>
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <a class="btn btn-default" href="#"><i class="glyphicon glyphicon-search"></i></a>
+          </span>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-  
-  <div class="row">
-    <div class="col-md-6">
       <div class="cbg">
-        <h1 class="h-blu">我的收藏</h1>
+        <h3>热门标签</h3>
+        <p>
+          <a href="#" class="label label-default">花样作死大赛</a>
+          <a href="#" class="label label-default">Web前端</a>
+          <a href="#" class="label label-default">PHP</a>
+          <a href="#" class="label label-default">Java</a>
+          <a href="#" class="label label-default">C</a>
+          <a href="#" class="label label-default">黑主席</a>
+          <a href="#" class="label label-default">Web设计</a>
+          <a href="#" class="label label-default">移动UI</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="row">
         
-          <div class="cnt cnt-blu blog-thumb">
-  <div class="blog-dashboard">
-    <div class="blog-votes">-7</div>
-    <div class="blog-comment-count"><a href="#">19条评论</a></div>
-  </div>
-  <h3><a href="#">二十一天学会Fire XMP</a></h3>
-  <p class="blog-abs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum a impedit numquam explicabo dignissimos consequuntur voluptatem sunt eligendi quas nam fuga praesentium accusamus rem corporis quae laudantium iusto necessitatibus?</p>
-  <p class="blog-tags">
-    
-      <a href="#" class="label label-default">Ingress</a>
-    
-      <a href="#" class="label label-default">二十一天学会XXX</a>
-    
-  </p>
-  <p class="blog-footer">
-    ATR >> <a href="#">xghrl</a> > @21天前
-  </p>
-</div>
-        
-        
-          <div class="cnt cnt-red question-thumb">
+          <div class="col-md-12">
+            <div class="cbg">
+              <div class="cnt cnt-red question-thumb">
   <div class="question-dashboard">
-    <div class="question-votes">21</div>
-    <div class="question-answers">3</div>
+    <div class="question-votes">73</div>
+    <div class="question-answers">1</div>
   </div>
   <h3>
-    <a href="#如何安装ArchLinux">如何安装ArchLinux</a>
+    <a href="#AngularJS的设计思想是什么？">AngularJS的设计思想是什么？</a>
   </h3>
   <p class="question-tags">
     
-      <a href="#" class="label label-default">Linux</a>
+      <a href="#" class="label label-default">AngularJS</a>
     
-      <a href="#" class="label label-default">Archlinux</a>
+      <a href="#" class="label label-default">Web开发</a>
     
   </p>
   <p class="blog-footer">
-    ATR >> <a href="#">SierraTen</a> > @12小时前
+    ATR >> <a href="#">SierraSix</a> > @2小时前
   </p>
 </div>
+            </div>
+          </div>
         
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="cbg">
-        <h1 class="h-red">我的发布</h1>
+          <div class="col-md-12">
+            <div class="cbg">
+              <div class="cnt cnt-red question-thumb">
+  <div class="question-dashboard">
+    <div class="question-votes">-3</div>
+    <div class="question-answers">1</div>
+  </div>
+  <h3>
+    <a href="#Heat Sink的作用是什么？">Heat Sink的作用是什么？</a>
+  </h3>
+  <p class="question-tags">
+    
+      <a href="#" class="label label-default">Ingress</a>
+    
+  </p>
+  <p class="blog-footer">
+    ATR >> <a href="#">CubeLin</a> > @6小时前
+  </p>
+</div>
+            </div>
+          </div>
         
-          <div class="cnt cnt-red question-thumb">
+          <div class="col-md-12">
+            <div class="cbg">
+              <div class="cnt cnt-red question-thumb">
   <div class="question-dashboard">
     <div class="question-votes">10</div>
     <div class="question-answers">2</div>
@@ -207,29 +177,14 @@
     ATR >> <a href="#">SierraNine</a> > @4小时前
   </p>
 </div>
-        
-        
-          <div class="cnt cnt-blu blog-thumb">
-  <div class="blog-dashboard">
-    <div class="blog-votes">1</div>
-    <div class="blog-comment-count"><a href="#">8条评论</a></div>
-  </div>
-  <h3><a href="#">这些龙不是我引的</a></h3>
-  <p class="blog-abs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum a impedit numquam explicabo dignissimos consequuntur voluptatem sunt eligendi quas nam fuga praesentium accusamus rem corporis quae laudantium iusto necessitatibus?</p>
-  <p class="blog-tags">
-    
-      <a href="#" class="label label-default">World of Warcraft</a>
-    
-  </p>
-  <p class="blog-footer">
-    ATR >> <a href="#">火车网</a> > @1天前
-  </p>
-</div>
+            </div>
+          </div>
         
       </div>
     </div>
   </div>
 </div>
+
 
     <footer class="signature">
   <h6>&copy;2013 SFEI Systems Inc.; All Rights Reserved.</h6>
