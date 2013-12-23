@@ -83,10 +83,6 @@ code, pre {
   font-size: 18px;
 }
 
-.navbar-ops {
-  font-size: 11px;
-}
-
 .navbar-nav .active > a {
   border-bottom: 5px solid @ing-blue;
 }
@@ -433,6 +429,44 @@ footer.signature {
 .hint:before {
   content: '>> ';
   color: lighten(@cbg-grey, 50%);
+}
+
+.float-msg {
+  display: none;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1999;
+}
+
+.float-msg.active {
+  display: block;
+}
+
+.float-msg > .alert {
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
+}
+
+.float-msg > .alert a {
+  color: @cbg-grey;
+}
+
+.modal-content {
+  border: 1px solid lighten(@cbg-grey, 15%);
+  background-color: @cbg-grey;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: lighten(@cbg-grey, 25%);
+}
+
+.modal-header .close {
+  color: #fff;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {

@@ -31,11 +31,37 @@
     <script src="./js/bootstrap{{#if production}}.min{{/if}}.js"></script>
     <script src="./js/application.js"></script>
 
+    <div class="float-msg"></div>
+
     {{> nav }}
 
     {{> body }}
 
     {{> footer }}
+
+    <div id="modal-login" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">登录</h4>
+          </div>
+          <div class="modal-body form-horizontal">
+            {{#parseJSON '{"id": "cies_email", "label": "电子邮箱", "horizontal": true}'}}
+              {{> form-group }}
+            {{/parseJSON}}
+
+            {{#parseJSON '{"id": "cies_password", "type": "password", "label": "密码", "horizontal": true}'}}
+              {{> form-group }}
+            {{/parseJSON}}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary modal-login-submit" data-loading-text="登录中…" data-complete-text="成功！">登录</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     
   </body>
 </html>
