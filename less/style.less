@@ -469,6 +469,21 @@ footer.signature {
   color: #fff;
 }
 
+.list-pagination {
+  text-align: center;
+}
+
+.pagination > li > a, 
+.pagination > li > span {
+  border-color: lighten(@cbg-grey, 15%);
+  background-color: @cbg-grey;
+}
+
+.pagination > li > a:hover,
+.pagination > li > a:active {
+  background-color: lighten(@cbg-grey, 5%);
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   body {
     background-image: url('../assets/img/twinkle_twinkle_@2X.png');
