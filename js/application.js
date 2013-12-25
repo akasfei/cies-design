@@ -27,17 +27,17 @@
     $('#modal-login .modal-login-submit').on('click', function (e) {
       var self = $(this);
       var logindata = {};
-      logindata.email = $('#cies_email').val();
-      logindata.password = $('#cies_password').val();
+      logindata.email = $('#modal-login #cies_email').val();
+      logindata.password = $('#modal-login #cies_password').val();
       $('#modal-login .form-group').removeClass('has-error');
       if (logindata.email.search(/[a-zA-z0-9]+@[a-zA-z0-9]+\.[a-zA-z]+/g) < 0) {
         $('.float-msg').floatmsg({msg: '请输入正确的电子邮箱。'});
-        $('#cies_email').parents('.form-group').addClass('has-error');
+        $('#modal-login #cies_email').parents('.form-group').addClass('has-error');
         return;
       }
       if (logindata.password.length < 6 || logindata.password.length > 16) {
         $('.float-msg').floatmsg({msg: '请输入6~16位的密码。'});
-        $('#cies_password').parents('.form-group').addClass('has-error');
+        $('#modal-login #cies_password').parents('.form-group').addClass('has-error');
         return;
       }
       $('.float-msg').floatmsg('hide');
@@ -61,6 +61,11 @@
         }
       });
     });
+
+    $('#modal-login').on('hide.bs.modal', function (e) {
+      $('#modal-login .form-group').removeClass('has-error');
+      $('.float-msg').floatmsg('hide');
+    })
   })
 
 }(window.jQuery)
