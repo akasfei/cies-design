@@ -85,6 +85,12 @@ module.exports = function(grunt) {
       bootstrap: {
         src: ['<%= concat.bootstrap.dest %>'],
         dest: 'dist/js/bootstrap.min.js'
+      },
+      application: {
+        files: {
+          'dist/js/application.min.js': 'js/application.js',
+          'dist/js/app-editor.min.js': 'js/app-editor.js'
+        }
       }
     },
 
